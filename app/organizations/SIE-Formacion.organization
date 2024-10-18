@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1" name="SIE-Formacion">
+  <customUserInfoDefinitions/>
+  <users>
+    <user userName="walter.bates">
+      <firstName>Walter</firstName>
+      <lastName>Bates</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="jane.done">
+      <firstName>Jane</firstName>
+      <lastName>Doe</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+  </users>
+  <roles>
+    <role name="Director">
+      <displayName>Director</displayName>
+    </role>
+    <role name="Instructor">
+      <displayName>Instructor</displayName>
+    </role>
+    <role name="Alumno">
+      <displayName>Alumno</displayName>
+    </role>
+  </roles>
+  <groups>
+    <group name="Grupo1" parentPath="/Grupo1">
+      <displayName>Grupo1</displayName>
+    </group>
+    <group name="SIE">
+      <displayName>SIE</displayName>
+    </group>
+    <group name="Algebra Lineal" parentPath="/SIE">
+      <displayName>AlgebraLineal</displayName>
+    </group>
+    <group name="Analisis De Datos" parentPath="/SIE">
+      <displayName>AnalisisDeDatos</displayName>
+    </group>
+  </groups>
+  <memberships>
+    <membership>
+      <userName>walter.bates</userName>
+      <roleName>Director</roleName>
+      <groupName>SIE</groupName>
+    </membership>
+    <membership>
+      <userName>walter.bates</userName>
+      <roleName>Instructor</roleName>
+      <groupName>Algebra Lineal</groupName>
+      <groupParentPath>/SIE</groupParentPath>
+    </membership>
+    <membership>
+      <userName>jane.done</userName>
+      <roleName>Instructor</roleName>
+      <groupName>Analisis De Datos</groupName>
+      <groupParentPath>/SIE</groupParentPath>
+    </membership>
+  </memberships>
+</organization:Organization>
