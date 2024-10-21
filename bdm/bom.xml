@@ -7,6 +7,7 @@
                 <field type="LOCALDATE" length="255" name="fechaDeInicio" nullable="true" collection="false"/>
                 <field type="LOCALDATE" length="255" name="fechaDeFin" nullable="true" collection="false"/>
                 <relationField type="AGGREGATION" reference="es.sie.model.Matricula" fetchType="LAZY" name="matriculas" nullable="true" collection="true"/>
+                <field type="STRING" length="255" name="nombre" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
